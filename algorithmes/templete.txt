@@ -1,0 +1,17 @@
+Algorithme "La somme de 1 et 3"
+Variables // ingredients
+    entier // 3
+    decimales //3.1
+    caracteres // v ou F
+    chaine de caracteres // Vrai ou Faux
+    chaineDeCaracters // camel case 
+    chaine_de_caractere // snake case
+Debut
+    Instruction 1 
+    Instruction 2
+    .
+    .
+    .
+    .
+    Instruction N
+Fin
