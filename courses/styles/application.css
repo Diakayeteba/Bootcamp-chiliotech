@@ -60,7 +60,7 @@ header , footer , nav , .logo{
 
 .wrapper{
     border: #67f707 3px dashed;
-
+    height: 30px;
 }
 
 article {
