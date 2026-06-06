@@ -1,0 +1,13 @@
+body {
+    background-color: #8e61b9;
+   
+    font-size: 16px;
+    font-family:'Open Sans';
+    padding: 0;
+    margin: 0;
+}
+
+.table{
+  border: #8e61b9;
+    background-color: #8e61b9;
+}

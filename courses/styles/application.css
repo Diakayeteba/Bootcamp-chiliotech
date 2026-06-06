@@ -1,10 +1,14 @@
 body html{
-    background-color: rgb(152, 152, 193);
-    color: white;
+    background-color: none;
+    color: #f7f6f617;
     font-size: 16px;
     font-family:'Open Sans';
     padding: 0;
     margin: 0;
+}
+
+body{
+    background-color: hsl(345, 28%, 83%);
 }
 
 .titre{
@@ -14,6 +18,8 @@ body html{
 .container {
     width: 1000px;
     margin:  0 auto;
+     align-items: center;
+
     
     
 }
@@ -28,7 +34,7 @@ body html{
 }
 
 .button{
-    background: white;
+    background: #f55151;
     border: none;
     cursor: pointer;
     border-radius: 10px;
@@ -36,44 +42,51 @@ body html{
     box-shadow: 1px 1px 1px rgb(248, 1, 1);
 }
 
-.button:hover{
+.button:hover {
     background: rgb(8, 64, 217);
     color: white;
     transition: background-color 0.01s,
                 color 0.01s,
                 all 1s;
+    
 }
 
 section {
-    border: black;
-    border-width: 5px;
-    border-style: solid;
+    /* border: black;      */
+    /* border-width: 5px;*/
+    /* border-style: solid;*/
+    background-color: #c8a1ab;
     
 }
 
 header , footer , nav , .logo{
-    border: #67f707;
-    border-width: 5px;
-    border-style: solid;
+   /* border: #67f707;     */
+   /* border-width: 5px;*/
+   /* border-style: solid;*/
     
 }
 
 .wrapper{
-    border: #67f707 3px dashed;
+    /* border: #67f707 3px dashed;*/
     height: 30px;
 }
 
 article {
-    border: #67f707 3px dashed;
+    /* border: #67f707 3px dashed; */
 
 }
 
-article .date, article .description{
-     border: #150101 3px dashed;
+article .date {
+    /* border: #150101 3px dashed;*/
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 0 20px;
+    flex-direction: column;
 
 }
 .logo{
-    background-color: red;
+    /*background-color: red;*/
     flex: 1;
     align-content: center ;
     text-decoration:none;
@@ -81,9 +94,10 @@ article .date, article .description{
     padding: 0 15px 0 15px;
 }
 .nav {
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
-    align-items: center;
+   
+    text-align: right;
 }
 
 .nav ul {
@@ -91,6 +105,12 @@ article .date, article .description{
    display: flex;
    margin: 0;
    font-size: 14px;
+   flex: 1;  
+   border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+     text-align: right;
    
 }
 
@@ -99,6 +119,9 @@ header {
     display: flex;
     justify-content: space-between;
     height: 30px;
+     align-items: center;
+     text-align: left;
+    
 }
 
 .nav > ul  li > a {
@@ -108,12 +131,70 @@ header {
     padding-right: 3px;
     padding-bottom: 3px;
     padding-left: 3px;
-    border: 1px white solid;
+     text-align: right;
+    /* border: 1px white solid; */
 
 }
 
-.footer {
+footer {
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
+}
+.link, .deletbtn {
+    flex: 1;           /* ✨ LA MAGIE EST ICI : chaque bouton prend 50% de l'espace disponible */
+    height: 30px;      /* Une hauteur un peu plus grande pour que ce soit plus cliquable sur tout l'écran */
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+    /* Centrage parfait du texte à l'intérieur du bouton/lien */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+    height: auto;
+
+}
+
+/* On applique juste leurs couleurs respectives */
+.link {
+    background-color: green;
+}
+
+.deletbtn {
+    background-color: #f55151;
+}
+
+.boutons-wrapper{
+    display: flex;
+    width: 100%;       /* Force le conteneur à faire toute la largeur de la page */
+    gap: 10px;         /* Petit espace optionnel entre les deux boutons */
+    box-sizing: border-box; /* Évite les bugs de dépassement d'écran avec les paddings */
+}
+
+.table{
+     width: 100%;
+     border-collapse:collapse  ;
+}
+
+.table td{
+   
+    border: 1px solid red;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.image-meteo{
+
 }
