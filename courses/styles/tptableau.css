@@ -10,4 +10,13 @@ body {
 .table{
   border: #8e61b9;
     background-color: #8e61b9;
+    width: 100%;
+     border-collapse:collapse  ;
+}
+.border-table{
+    width: 1000px;
+    margin:  0 auto;
+     align-items: center;
+     border: 10px solid red;
+
 }
