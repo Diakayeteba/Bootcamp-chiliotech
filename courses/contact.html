@@ -4,54 +4,59 @@
         <link rel="stylesheet" href="styles/application.css"/> 
 
     <body>
-        <header class="container-header header d-flex justify-content-start">
-            <div class="container">
-                <a href="index.html" class="logo ">COURSES</a>
-                <nav class="nav d-flex justify-content-start">
-                    <ul class="container-header dropdown-menu">
-                        <li class="dropdown-header"><a href = "index.html">Accueil</a></li>
-                        <li class="dropdown-header"><a href = "creer.html">Creer</a><li>
-                        <li class="dropdown-header"><a href = "contact.html"> contact</a><li>
-                        <li class="dropdown-header"> <a href = "liste.html"> Liste </a>
-                    </ul>
+        <header class="header bg-light">
+    <div class="container d-flex justify-content-between align-items-center p-3">
 
+        <a href="index.html" class="logo text-decoration-none h4 mb-0 text-dark font-weight-bold">COURSES</a>
 
-                </nav>
-            </div>
-        </header>
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link link-primary" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link link-primary" href="creer.html">Créer</a></li>
+                <li class="nav-item"><a class="nav-link link-primary" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link link-primary" href="liste.html">Liste</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
 
         <div class="container">
-            <h1 class="titre">contact</h1>
+            <h1 class="titre"></h1>
             <form class="formulaire row row-cols-lg-auto g-3 align-items-center">
                 <div class="form-group col-12">
                     <label for="civilité">Civilité</label>
                     <div class="form-check form-switch d-flex justify-content-between" aria-labelledby="civilité col-12">
                         <label for="monsieur" class="form-check-label">
-                             <input  id="monsieur" type="radio" name="civilité" class="form-check-input"/>
-                             Monsieur
-                        </label>
+                        <input  id="monsieur" type="radio" name="civilité" class="form-check-input"/>
+                          Monsieur
+                        </label>   
+                            
 
                         <label for="madame" class="form-check-label d-flex justify-content-between">
                              <input  id="madame" type="radio" name="civilité" class="form-check-input col-12"/>
                              Madame
                         </label>
                     </div>
-                    <input  id="firstName" name="firstName" class="input" placeholder="Votre prénom"/>
+                    
+               
+                
+
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">Votre prénom</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Votre prénom">
                 </div>
-                <div class="form-group">
-                    <label for="firstName">Votre prénom</label>
-                    <input  id="firstName" name="firstName" class="input" placeholder="Votre prénom"/>
+                <div class="mb-3">
+                  <label for="firstName2" class="form-label">Votre nom</label>
+                  <input type="text" class="form-control" id="firstName2" placeholder="Votre nom">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Votre email</label>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Votre email">
                 </div>
 
-                <div class="form-group">
-                    <label for="lastName">Votre nom</label>
-                    <input  id="lastName" name="lastName" class="input" placeholder="Votre prénom"/>
-                </div>
+                
 
-                 <div class="form-group">
-                    <label for="email">Votre email</label>
-                    <input  id="email" type="email" name="email" class="input" placeholder="Votre email"/>
-                </div>
 
                 <div class="form-group">
                     <label for="email">Message (optionnel)</label>
@@ -59,22 +64,23 @@
 
                     </textarea>
                 </div>
+                <br>
                 <div>
                     <label for="formation-select">Comment avez vous connu AwKa IT Solution ?</label>
 
-                    <select name="formation-select" id="formation-select">
-                        <option value="">--Selectionne</option>
-                        <option value="">LinkdIn</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="amis">Ami(e)s</option>
-                        <option value="Youtube">Youtube</option>
-                        <option value="Autres">Autres</option>
+    
 
-                        
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>--Selectionne</option>
+                        <option value="1">LinkdIn</option>
+                        <option value="2">Facebook</option>
+                        <option value="3">Ami(e)s</option>
+                        <option value="3">Youtube</option>
+                        <option value="3">Autres</option>
                     </select>
 
                 </div>
-
+                    <br>
                 <div class="checkbox-container">
                     <input type="checkbox" id="accept-rules" name="conditions" value="accepted">
                     <label for="accept-rules" class="accept-rules">je ne souhaite pas recevoir d'informations de bon plan et de cadeaux</label>
@@ -82,6 +88,7 @@
                 
 
                 </select>
+                <br>
                 <div class="form-group">
                 <button class="button" id="" type="button">Transmettre</button>
                 </div>
