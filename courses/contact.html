@@ -1,20 +1,98 @@
 <html>
     <head>
-        <link rel="stylesheet" href="styles/application.css"/>
-    </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/application.css"/> 
 
     <body>
+        <header class="container-header header d-flex justify-content-start">
+            <div class="container">
+                <a href="index.html" class="logo ">COURSES</a>
+                <nav class="nav d-flex justify-content-start">
+                    <ul class="container-header dropdown-menu">
+                        <li class="dropdown-header"><a href = "index.html">Accueil</a></li>
+                        <li class="dropdown-header"><a href = "creer.html">Creer</a><li>
+                        <li class="dropdown-header"><a href = "contact.html"> contact</a><li>
+                        <li class="dropdown-header"> <a href = "liste.html"> Liste </a>
+                    </ul>
 
-        <ul>
-                <li><a href = "index.html">Accueil</a></li>
-                <li><a href = "creer.html">Creer</a><li>
-                <li><a href = "contact.html"> contact</a><li>
-                <li> <a href = "liste.html">afficher la Liste </a>
-        </ul>
 
-        
-         <h1 class="titre">Page contact</h1>
-         <button class="button" type="button">Transmettre</button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <h1 class="titre">contact</h1>
+            <form class="formulaire row row-cols-lg-auto g-3 align-items-center">
+                <div class="form-group col-12">
+                    <label for="civilité">Civilité</label>
+                    <div class="form-check form-switch d-flex justify-content-between" aria-labelledby="civilité col-12">
+                        <label for="monsieur" class="form-check-label">
+                             <input  id="monsieur" type="radio" name="civilité" class="form-check-input"/>
+                             Monsieur
+                        </label>
+
+                        <label for="madame" class="form-check-label d-flex justify-content-between">
+                             <input  id="madame" type="radio" name="civilité" class="form-check-input col-12"/>
+                             Madame
+                        </label>
+                    </div>
+                    <input  id="firstName" name="firstName" class="input" placeholder="Votre prénom"/>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Votre prénom</label>
+                    <input  id="firstName" name="firstName" class="input" placeholder="Votre prénom"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Votre nom</label>
+                    <input  id="lastName" name="lastName" class="input" placeholder="Votre prénom"/>
+                </div>
+
+                 <div class="form-group">
+                    <label for="email">Votre email</label>
+                    <input  id="email" type="email" name="email" class="input" placeholder="Votre email"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Message (optionnel)</label>
+                    <textarea id="message" rows="8">
+
+                    </textarea>
+                </div>
+                <div>
+                    <label for="formation-select">Comment avez vous connu AwKa IT Solution ?</label>
+
+                    <select name="formation-select" id="formation-select">
+                        <option value="">--Selectionne</option>
+                        <option value="">LinkdIn</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="amis">Ami(e)s</option>
+                        <option value="Youtube">Youtube</option>
+                        <option value="Autres">Autres</option>
+
+                        
+                    </select>
+
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="accept-rules" name="conditions" value="accepted">
+                    <label for="accept-rules" class="accept-rules">je ne souhaite pas recevoir d'informations de bon plan et de cadeaux</label>
+                </div>
+                
+
+                </select>
+                <div class="form-group">
+                <button class="button" id="" type="button">Transmettre</button>
+                </div>
+            </form>
+         
+        </div>
+
+ 
+        <button class="btn-contact">Contactez nous</button> 
+   
+
     </body>
 
 

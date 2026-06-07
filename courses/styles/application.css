@@ -1,5 +1,6 @@
 body html{
     background-color: none;
+    position: relative;
     color: #f7f6f617;
     font-size: 16px;
     font-family:'Open Sans';
@@ -157,7 +158,7 @@ footer {
 }
 .container-header{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     cursor: pointer;
     flex: 1;
@@ -196,5 +197,35 @@ footer {
 }
 
 .image-meteo{
+    width: 100%;
+}
 
+.formulaire{
+     
+     width: 500px;
+     margin: 0 auto;
+    flex-direction: column;
+    gap: 5px;
+
+
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input{
+    padding: 6px;
+}
+
+.btn-contact{
+    position: fixed;
+    width: 100px;
+    bottom: 100px;
+    right: 10px;
+    
+    
 }
