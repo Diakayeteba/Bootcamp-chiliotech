@@ -2,35 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Login Page</title>
+    <title>Page de connexion moderne</title>
 </head>
 <body>
 
     <div class="container" id="container">
-        <div class="from-container sign-up">
+        <div class="form-container sign-up">
             <form action="">
-                <h1>Create Account</h1>
+                <h1>Créer un compte</h1>
                 <div class="social-icons">
                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a> 
                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a> 
                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a> 
                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a> 
                 </div>
-                <span>Or use your email for registration</span> 
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="name">
-                <input type="text" placeholder="name">
-                <input type="text" placeholder="name">
+                <span>Ou utilisez votre adresse e-mail pour vous inscrire.</span> 
+                <input type="text" placeholder="Texte">
+                <input type="name" placeholder="Nom">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+                <input type="text" placeholder="Nom">
+                <button>S'inscrire</button> 
 
             </form>
         </div>
-    </div>
-    <script src="script.js">
 
-    </script>
+          <div class="form-container sign-in">
+            <form >
+                <h1>Se connecter</h1>
+                <div class="social-icons">
+                   <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a> 
+                   <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a> 
+                   <a href="#" class="icon"><i class="fa-brands fa-github"></i></a> 
+                   <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a> 
+                </div>
+                <span>Ou utilisez votre mot de passe de messagerie</span> 
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+                <a href="#"> Mot de passe oublié ?</a>
+                <button>Se connecter</button> 
+
+            </form>
+
+            </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Content de te revoir 🤝😊</h1>
+                    <p>Saisissez vos informations personnelles pour utiliser toutes les fonctionnalités du site</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+
+                <div class="toggle-panel toggle-right">
+                    <h1>Bamadou 🤝😊</h1>
+                    <h1>Bjr Mon ami(e)s!</h1>
+                    <p>Inscrivez-vous avec vos informations personnelles pour utiliser toutes les fonctionnalités du site.</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="https://wa.me/33759159183" class="btn-contact-link text-decoration-none form-group mb-3 btn-contact"></a>
+    <script src="javascripts/script.js"></script>
     
 </body>
 </html>
