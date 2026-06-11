@@ -1,0 +1,21 @@
+Algorithme verifier nombres
+int n;
+bool estPair;
+Debut
+    estPair= faux,
+
+    ecrire "Veuillez saisir un entier";
+    lire n;
+
+    SI n modulo 2 == 0 ALORS
+        estPair = VRAI
+    FIN SI
+
+    SI n modulo 2 == 0 ALORS
+    ecrire n + "est un nombres pair";
+    SINON
+        ecrire n + "est un nombres impair";
+    FIN SI
+
+
+fin

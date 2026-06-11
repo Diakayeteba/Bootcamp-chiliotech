@@ -1,0 +1,16 @@
+Algorithme factoriel
+
+int n 
+int factoriel = //1;
+
+Debut
+    ecrire "Veuillez saisir un entier";
+    lire n;
+
+    pour i de 1 à n faire
+        factoriel = factoriel*i;
+    fin
+
+    ecrire "le factoriel de " + n + "est :" + factoriel;
+    
+fin

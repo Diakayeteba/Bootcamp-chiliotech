@@ -1,0 +1,28 @@
+fonction lireListe()
+    int[] liste = [];
+    ecrire "combien d'entier àller vous saisir ?";
+    lire n;
+
+    pour i de 0 à n - 1 faire
+        ecrire "Veuillez saisir un entier";
+        lire valeur;
+        liste [i]= valeur;
+    fin
+    retourner liste
+
+fin
+
+fonction chercherLeMax (tableauDeValeursEntiers)
+    int max = tableauDeValeursEntiers[0];
+    int taille= tableauDeValeursEntiers.taille();
+
+fin
+
+Algorithme grande valeur
+Debut
+// lire les valeurs 
+valeursAvecMax = lireListe();
+
+// chercher le plus grand
+max = chercherLeMax
+fin

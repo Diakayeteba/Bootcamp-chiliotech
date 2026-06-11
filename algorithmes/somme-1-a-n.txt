@@ -1,0 +1,25 @@
+fonction sommeNombre(nombres)
+    somme = 0;
+    // Boucle
+    pour 1 à nombres faire
+        somme = somme + index;
+    fin pour
+
+    ecrire "la somme de 0 à " + n-1 + "est" + somme;
+
+fin
+Algorithme somme de n nombres
+int n;
+int somme;
+Debut
+
+    ecrire : "Veuillez saisir un entier";
+    lire n;
+    // supposons que ce soit 3
+    //somme = somme +1 ; // somme ->1;
+    //somme = somme +2 ; // somme ->3;
+    //somme = somme +3 ; // somme ->6;
+
+    ecrire "La somme de 0 à " + nombres + "est" + somme;
+
+    Fin

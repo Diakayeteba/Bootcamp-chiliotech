@@ -1,31 +1,24 @@
-body html{
+body html {
     background-color: none;
     position: relative;
     color: #f7f6f617;
     font-size: 16px;
-    font-family:'Open Sans';
+    font-family: 'Open Sans';
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: hsl(345, 28%, 83%);
 }
 
-.titre{
+.titre {
     font-size: 24px;
 }
 
-.container {
-    width: 1000px;
-    margin:  0 auto;
-     align-items: center;
 
-    
-    
-}
 
-#description{
+#description {
     font-size: small;
 }
 
@@ -34,7 +27,7 @@ body{
     text-decoration: none;
 }
 
-.button{
+.button {
     background: #f55151;
     border: none;
     cursor: pointer;
@@ -47,9 +40,9 @@ body{
     background: rgb(8, 64, 217);
     color: white;
     transition: background-color 0.01s,
-                color 0.01s,
-                all 1s;
-    
+        color 0.01s,
+        all 1s;
+
 }
 
 section {
@@ -57,17 +50,20 @@ section {
     /* border-width: 5px;*/
     /* border-style: solid;*/
     background-color: #c8a1ab;
-    
+
 }
 
-header , footer , nav , .logo{
-   /* border: #67f707;     */
-   /* border-width: 5px;*/
-   /* border-style: solid;*/
-    
+header,
+footer,
+nav,
+.logo {
+    /* border: #67f707;     */
+    /* border-width: 5px;*/
+    /* border-style: solid;*/
+
 }
 
-.wrapper{
+.wrapper {
     /* border: #67f707 3px dashed;*/
     height: 30px;
 }
@@ -77,42 +73,35 @@ article {
 
 }
 
-article .date {
-    /* border: #150101 3px dashed;*/
-    align-items: center;
-    display: flex;
-    text-align: center;
-    padding: 0 20px;
-    flex-direction: column;
 
-}
-.logo{
+.logo {
     /*background-color: red;*/
     flex: 1;
-    align-content: center ;
-    text-decoration:none;
+    align-content: center;
+    text-decoration: none;
     font-weight: bold;
     padding: 0 15px 0 15px;
 }
+
 .nav {
     /*background-color: red;*/
     display: flex;
-   
+
     text-align: right;
 }
 
 .nav ul {
-   list-style: none;
-   display: flex;
-   margin: 0;
-   font-size: 14px;
-   flex: 1;  
-   border: none;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    font-size: 14px;
+    flex: 1;
+    border: none;
     color: white;
     text-decoration: none;
     font-size: 16px;
-     text-align: right;
-   
+    text-align: right;
+
 }
 
 
@@ -120,19 +109,19 @@ header {
     display: flex;
     justify-content: space-between;
     height: 30px;
-     align-items: center;
-     text-align: left;
-    
+    align-items: center;
+    text-align: left;
+
 }
 
-.nav > ul  li > a {
+.nav>ul li>a {
 
     display: block;
     padding: 3px;
     padding-right: 3px;
     padding-bottom: 3px;
     padding-left: 3px;
-     text-align: right;
+    text-align: right;
     /* border: 1px white solid; */
 
 }
@@ -142,21 +131,26 @@ footer {
     padding: 10px 0;
     font-size: 14px;
 }
-.link, .deletbtn {
-    flex: 1;           /* ✨ LA MAGIE EST ICI : chaque bouton prend 50% de l'espace disponible */
-    height: 30px;      /* Une hauteur un peu plus grande pour que ce soit plus cliquable sur tout l'écran */
+
+.link,
+.deletbtn {
+    flex: 1;
+    /* ✨ LA MAGIE EST ICI : chaque bouton prend 50% de l'espace disponible */
+    height: 30px;
+    /* Une hauteur un peu plus grande pour que ce soit plus cliquable sur tout l'écran */
     border: none;
     color: white;
     text-decoration: none;
     font-size: 16px;
-    
+
     /* Centrage parfait du texte à l'intérieur du bouton/lien */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.container-header{
+
+.container-header {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -172,23 +166,26 @@ footer {
 }
 
 .deletbtn {
-    background-color: #f55151;
+    background-color: #ec0b0b;
 }
 
-.boutons-wrapper{
+.boutons-wrapper {
     display: flex;
-    width: 100%;       /* Force le conteneur à faire toute la largeur de la page */
-    gap: 10px;         /* Petit espace optionnel entre les deux boutons */
-    box-sizing: border-box; /* Évite les bugs de dépassement d'écran avec les paddings */
+    width: 100%;
+    /* Force le conteneur à faire toute la largeur de la page */
+    gap: 10px;
+    /* Petit espace optionnel entre les deux boutons */
+    box-sizing: border-box;
+    /* Évite les bugs de dépassement d'écran avec les paddings */
 }
 
-.table{
-     width: 100%;
-     border-collapse:collapse  ;
+.table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.table td{
-   
+.table td {
+
     border: 1px solid red;
 }
 
@@ -196,14 +193,14 @@ footer {
     text-align: right;
 }
 
-.image-meteo{
+.image-meteo {
     width: 100%;
 }
 
-.formulaire{
-     
-     width: 500px;
-     margin: 0 auto;
+.formulaire {
+
+    width: 500px;
+    margin: 0 auto;
     flex-direction: column;
     gap: 5px;
 
@@ -211,21 +208,95 @@ footer {
 
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.input{
+.input {
     padding: 6px;
 }
 
-.btn-contact{
+.btn-contact {
     position: fixed;
     width: 100px;
     bottom: 100px;
     right: 10px;
-    
+
+
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows:  100px 100px;
+    grid-template-columns: 1fr 1fr  ;
+    justify-content: center;
+    row-gap: 10px;/*l'espace entre les celulles*/
+    column-gap: 10px;/*l'espace entre les colonnes*/
+}
+
+.grid .item{
+    border: #ec0b0b 1px solid;
+    display: flex;
+    align-items: center;/*centrer le contenu du tableau*/
+    flex-direction: column;
+    justify-content: center;/*justifier le nontenu du tableau*/
     
 }
+
+.item-1, .item-2{
+    grid-row: 1 / 3;
+}
+
+@media (max-width: 576px) {
+
+    article {
+        flex-direction: column;
+        margin: 0 30px;
+        width: 100%;
+        margin: auto;
+
+
+    }
+
+    article .actions .deletbtn {
+        flex-direction: column;
+
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    article .date {
+        /* border: #150101 3px dashed;*/
+        align-items: center;
+        display: flex;
+        text-align: center;
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        align-items: center;
+
+
+
+    }
+}
+
+@media (min-width: 1400px) {}
