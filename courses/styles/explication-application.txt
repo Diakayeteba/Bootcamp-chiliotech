@@ -1,0 +1,449 @@
+/* =====================================================
+   FEUILLE DE STYLE CSS - NOTES D'APPRENTISSAGE
+   -----------------------------------------------------
+   Ce fichier me sert à pratiquer les notions suivantes :
+
+   1. Sélecteurs CSS
+      - body
+      - .classe
+      - #id
+      - parent > enfant
+
+   2. Mise en page
+      - Flexbox
+      - CSS Grid
+      - Positionnement
+
+   3. Responsive Design
+      - Media Queries
+
+   4. Apparence
+      - Couleurs
+      - Bordures
+      - Ombres
+      - Polices
+
+   -----------------------------------------------------
+   RAPPEL IMPORTANT
+
+   margin  = espace extérieur
+   padding = espace intérieur
+
+   Exemple :
+
+   +-----------------------+
+   |      margin           |
+   |  +---------------+    |
+   |  |   padding     |    |
+   |  | +-----------+ |    |
+   |  | | contenu   | |    |
+   |  | +-----------+ |    |
+   |  +---------------+    |
+   +-----------------------+
+
+   ===================================================== */
+
+
+/* =====================================================
+   STYLE GLOBAL DE LA PAGE
+   ===================================================== */
+
+/*
+html, body :
+- S'applique à toute la page.
+- Définit la police, la taille du texte
+  et supprime les marges par défaut du navigateur.
+*/
+html,
+body {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+}
+
+/*
+Couleur de fond générale de la page.
+*/
+body {
+    background-color: hsl(345, 28%, 83%);
+}
+
+
+/* =====================================================
+   TITRES ET TEXTES
+   ===================================================== */
+
+/*
+Classe utilisée pour les grands titres.
+*/
+.titre {
+    font-size: 24px;
+}
+
+/*
+ID utilisé pour une description secondaire.
+*/
+#description {
+    font-size: small;
+}
+
+
+/* =====================================================
+   BOUTONS
+   ===================================================== */
+
+/*
+Style de base d'un bouton.
+
+background      = couleur de fond
+border          = supprime la bordure
+cursor:pointer  = affiche la main au survol
+border-radius   = arrondit les angles
+box-shadow      = ajoute une ombre
+*/
+.button {
+    background: #f55151;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 100;
+    box-shadow: 1px 1px 1px rgb(248, 1, 1);
+}
+
+/*
+Effet au passage de la souris.
+*/
+.button:hover {
+    background: rgb(8, 64, 217);
+    color: white;
+
+    /*
+    transition :
+    permet d'animer les changements.
+    */
+    transition:
+        background-color 0.01s,
+        color 0.01s,
+        all 1s;
+}
+
+
+/* =====================================================
+   LIENS
+   ===================================================== */
+
+/*
+:hover = état lorsque la souris passe dessus.
+*/
+.link:hover {
+    color: #630eeb;
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   HEADER / NAVIGATION
+   ===================================================== */
+
+/*
+display:flex
+
+Permet d'aligner les éléments
+horizontalement ou verticalement.
+
+C'est l'une des propriétés les plus
+utilisées en CSS moderne.
+*/
+header {
+    display: flex;
+
+    /*
+    Espace automatiquement les éléments.
+    */
+    justify-content: space-between;
+
+    /*
+    Centre verticalement.
+    */
+    align-items: center;
+
+    height: 30px;
+}
+
+/*
+Logo du site.
+*/
+.logo {
+    flex: 1;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/*
+Barre de navigation.
+*/
+.nav {
+    display: flex;
+    text-align: right;
+}
+
+/*
+Liste des menus.
+*/
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    flex: 1;
+}
+
+/*
+Liens du menu.
+*/
+.nav > ul li > a {
+    display: block;
+    padding: 3px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+/*
+Centre le texte du pied de page.
+*/
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* =====================================================
+   FLEXBOX - BOUTONS CÔTE À CÔTE
+   ===================================================== */
+
+/*
+Chaque bouton occupe une part égale.
+*/
+.link,
+.deletbtn {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+
+    color: white;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+/*
+Conteneur principal des boutons.
+*/
+.boutons-wrapper {
+    display: flex;
+
+    width: 100%;
+
+    /*
+    Espace entre les boutons.
+    */
+    gap: 10px;
+
+    box-sizing: border-box;
+}
+
+/*
+Couleurs individuelles.
+*/
+.link {
+    background-color: green;
+}
+
+.deletbtn {
+    background-color: #ec0b0b;
+}
+
+
+/* =====================================================
+   TABLEAUX
+   ===================================================== */
+
+/*
+Tableau pleine largeur.
+*/
+.table {
+    width: 100%;
+
+    /*
+    Fusionne les bordures.
+    */
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 1px solid red;
+}
+
+
+/* =====================================================
+   FORMULAIRES
+   ===================================================== */
+
+/*
+Formulaire centré horizontalement.
+*/
+.formulaire {
+    width: 500px;
+
+    /*
+    auto = centrage horizontal
+    */
+    margin: 0 auto;
+
+    gap: 5px;
+}
+
+/*
+Label + champ empilés verticalement.
+*/
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+Champ de saisie.
+*/
+.input {
+    padding: 6px;
+}
+
+
+/* =====================================================
+   POSITION FIXE
+   ===================================================== */
+
+/*
+Reste visible même pendant le scroll.
+*/
+.btn-contact {
+    position: fixed;
+
+    width: 100px;
+
+    bottom: 100px;
+    right: 10px;
+}
+
+
+/* =====================================================
+   CONTAINER PRINCIPAL
+   ===================================================== */
+
+/*
+Zone centrale du site.
+*/
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   CSS GRID
+   ===================================================== */
+
+/*
+Grid = système de grille moderne.
+*/
+.grid {
+    display: grid;
+
+    /*
+    4 lignes de 100px.
+    */
+    grid-template-rows:
+        100px
+        100px
+        100px
+        100px;
+
+    /*
+    2 colonnes égales.
+    */
+    grid-template-columns:
+        1fr
+        1fr;
+
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+/*
+Cellule de la grille.
+*/
+.grid .item {
+    border: #ec0b0b 1px solid;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+/*
+Téléphones
+<= 576px
+*/
+@media (max-width: 576px) {
+
+}
+
+/*
+Tablettes
+>= 768px
+*/
+@media (min-width: 768px) {
+
+}
+
+/*
+Ordinateurs
+>= 992px
+*/
+@media (min-width: 992px) {
+
+}
+
+/*
+Grand écran
+>= 1200px
+*/
+@media (min-width: 1200px) {
+
+}
+
+/*
+Très grands écrans
+>= 1400px
+*/
+@media (min-width: 1400px) {
+
+}
