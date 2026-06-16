@@ -1,11 +1,27 @@
-let resultat = 0;
-const firstNumber = 10;
-const secondNumber = 20;
+/*
+    formation js 
+    Presentation des types de données 
+    var(DEPRECATED)
+    let pour definir une chaine de caractere
+ */
+var entier;
+entier = 10;
 
-resultat = firstNumber + secondNumber ;
+var reel = 10.45;
 
-// le resultat doit etre 30
-console.log("La somme est :", resultat);
+console.log(typeof entier, entier);
 
-resultat = firstNumber * secondNumber;
-console.log("le produit est :",resultat)
+let chaineDeCaracters = "Madou";
+console.log(typeof chaineDeCaracters, chaineDeCaracters);
+
+const PI = 22 / 7;
+console.log(PI);
+
+const OTHER_PI = 3.14;
+console.log(OTHER_PI);
+
+const IS_TRAINER = true;
+console.log(typeof IS_TRAINER);
+
+let numbers = [10, 3, 4, 45];
+console.log(typeof numbers, numbers);
