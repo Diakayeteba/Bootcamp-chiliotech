@@ -1,22 +1,16 @@
-var entier;
-entier = 10;
+// lire le cintenu de la balise h1
 
-var reel = 10.45;
+const contentsOfH1tags = document.getElementsByTagName("h1");
 
-console.log( typeof entier, entier);
+// afficher le contenu des balises h1
+console.log(contentsOfH1tags);
 
-let chaineDeCaracters = "Madou";
-console.log(chaineDeCaracters);
+// contenu de la premiere balise h1
+const firstH1 = contentsOfH1tags[0];
+console.log(firstH1.innerHTML);
 
-const PI = 22/7;
-console.log(PI);
-
-const OTHER_PI = 3.14;
-console.log(OTHER_PI);
-
-const IS_TRAINER = true;
-console.log(typeof IS_TRAINER);
-
-let numbers = [10, 3, 4, 45];
-console.log(typeof numbers, numbers);
-
+// Libelle du boutton
+const boutton = document.getElementById("calculer");
+console.log(boutton);
+const bouttonLabel = boutton.innerText;
+console.log(bouttonLabel);
