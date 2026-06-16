@@ -13,5 +13,10 @@ console.log(PI);
 
 const OTHER_PI = 3.14;
 console.log(OTHER_PI);
-const isTrainer = true;
-console.log(typeof isTrainer);
+
+const IS_TRAINER = true;
+console.log(typeof IS_TRAINER);
+
+let numbers = [10, 3, 4, 45];
+console.log(typeof numbers, numbers);
+
