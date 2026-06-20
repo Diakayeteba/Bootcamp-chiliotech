@@ -1,16 +1,47 @@
-// lire le cintenu de la balise h1
+function calculer(event) {
+    event.preventDefault();
+    console.log("effectuer un calcul");
+    const firstNumberInput = document.getElementById("firstNumber");
+    const valueOfFirstNumberInput = firstNumberInput.value;
+    console.log(valueOfFirstNumberInput);
+    
+    const secondNumberInput = document.getElementById("secondNumber");
+     const valueOfsecondNumberInput = secondNumberInput.value;
+    console.log(valueOfsecondNumberInput);
 
-const contentsOfH1tags = document.getElementsByTagName("h1");
+    const operation = document.getElementById("operation");
+     const selectedOperation = operation.value;
+    console.log(valueOfsecondNumberInput);
+    let result =0;
 
-// afficher le contenu des balises h1
-console.log(contentsOfH1tags);
+    console.log(typeof selectedOperation);
 
-// contenu de la premiere balise h1
-const firstH1 = contentsOfH1tags[0];
-console.log(firstH1.innerHTML);
+    if (Number(selectedOperation) === 1){
+        result = 1 * valueOfsecondNumberInput + 1 * valueOfFirstNumberInput;
+    } else if (Number(selectedOperation) === 2){
+          result = Number(valueOfsecondNumberInput) * Number(valueOfFirstNumberInput);
+    
+    }
+    console.log( "result" + result);
 
-// Libelle du boutton
-const boutton = document.getElementById("calculer");
-console.log(boutton);
-const bouttonLabel = boutton.innerText;
-console.log(bouttonLabel);
+    const name = document.getElementById("name");
+    const valueOfNameInput = name.value;
+    console.log ('Name : $(valueOfNameInput)');
+
+    // les Initiales 
+    const firstNameAndLastname = valueOfNameInput.split("");
+    const initials = `${firstNameAndLastname[0][0]}${firstNameAndLastname[0][1]}`;
+    
+
+    // concatenation
+    let nameAndResutlt = valueOfNameInput +  "" + result;
+    nameAndResutlt = `${initials.toUpperCase} ${result}`;
+    
+    // la longueur d'une chaine;
+    const length = nameAndResutlt.length;
+    console.log(length);
+
+    document.getElementById("result").innerHTML = nameAndResutlt;
+
+
+}
