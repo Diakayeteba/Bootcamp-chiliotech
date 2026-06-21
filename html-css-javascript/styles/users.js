@@ -1,13 +1,20 @@
+function handleResponse (response){
+    return response.json();
+}
+
+const handleResponse = (data) => {
+    console.log(data);
+};
+
 function fetchUsers(){
      fetch ("https://jsonplaceholder.typicode.com/users")
-     .then(function(response){
-        return response.json();
-
-    })
-     .then(function(data){
+     .then((response) => handleResponse(response))
+    
+     .then((data) => handleResponse(data));
        // JSON -> javascript object notation
-        console.log(data);
-       return data;
+        
 
-    });
+       
+
 }
+
