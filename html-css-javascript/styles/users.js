@@ -17,6 +17,18 @@ const handleData = (data) => {
        tableLines = tableLines + tableLine;
 
     }
+
+    const userAsTable = users.map(
+        user => (
+        `
+        <tr>
+            <th>${user.name}</th>
+            <th>${user.phone}</th>
+            <th>${user.email}</th>
+        </tr>
+       `
+
+    ))
     document.getElementById("users-body").innerHTML = tableLines;
 };
 
