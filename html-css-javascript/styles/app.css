@@ -29,6 +29,7 @@ input{
     border-radius: 35px;
     padding: 0px;
     width: 50%;
+    transition: 0.3s;
 
 }
 
