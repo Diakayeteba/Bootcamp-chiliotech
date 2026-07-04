@@ -1,47 +1,44 @@
 function calculer(event) {
-    event.preventDefault();
-    console.log("effectuer un calcul");
-    const firstNumberInput = document.getElementById("firstNumber");
-    const valueOfFirstNumberInput = firstNumberInput.value;
-    console.log(valueOfFirstNumberInput);
-    
-    const secondNumberInput = document.getElementById("secondNumber");
-     const valueOfsecondNumberInput = secondNumberInput.value;
-    console.log(valueOfsecondNumberInput);
+  event.preventDefault();
+  console.log("effectuer un calcul");
+  const firstNumberInput = document.getElementById("firstNumber");
+  const valueOfFirstNumberInput = firstNumberInput.value;
+  console.log(valueOfFirstNumberInput);
 
-    const operation = document.getElementById("operation");
-     const selectedOperation = operation.value;
-    console.log(valueOfsecondNumberInput);
-    let result =0;
+  const secondNumberInput = document.getElementById("secondNumber");
+  const valueOfsecondNumberInput = secondNumberInput.value;
+  console.log(valueOfsecondNumberInput);
 
-    console.log(typeof selectedOperation);
+  const operation = document.getElementById("operation");
+  const selectedOperation = operation.value;
+  console.log(valueOfsecondNumberInput);
+  let result = 0;
 
-    if (Number(selectedOperation) === 1){
-        result = 1 * valueOfsecondNumberInput + 1 * valueOfFirstNumberInput;
-    } else if (Number(selectedOperation) === 2){
-          result = Number(valueOfsecondNumberInput) * Number(valueOfFirstNumberInput);
-    
-    }
-    console.log( "result" + result);
+  console.log(typeof selectedOperation);
 
-    const name = document.getElementById("name");
-    const valueOfNameInput = name.value;
-    console.log ('Name : $(valueOfNameInput)');
+  if (Number(selectedOperation) === 1) {
+    result = 1 * valueOfsecondNumberInput + 1 * valueOfFirstNumberInput;
+  } else if (Number(selectedOperation) === 2) {
+    result = Number(valueOfsecondNumberInput) * Number(valueOfFirstNumberInput);
+  }
+  console.log("result" + result);
 
-    // les Initiales 
-    const firstNameAndLastname = valueOfNameInput.split("");
-    const initials = `${firstNameAndLastname[0][0]}${firstNameAndLastname[0][1]}`;
-    
+  const name = document.getElementById("name");
+  const valueOfNameInput = name.value;
 
-    // concatenation
-    let nameAndResutlt = valueOfNameInput +  "" + result;
-    nameAndResutlt = `${initials.toUpperCase} ${result}`;
-    
-    // la longueur d'une chaine;
-    const length = nameAndResutlt.length;
-    console.log(length);
+  console.log("Name : $(valueOfNameInput)");
 
-    document.getElementById("result").innerHTML = nameAndResutlt;
+  // les Initiales
+  const firstNameAndLastname = valueOfNameInput.split("");
+  const initials = `${firstNameAndLastname[0][0]}${firstNameAndLastname[0][1]}`;
 
+  // concatenation
+  let nameAndResutlt = valueOfNameInput + "" + result;
+  nameAndResutlt = `${initials.toUpperCase} ${result}`;
 
+  // la longueur d'une chaine;
+  const length = nameAndResutlt.length;
+  console.log(length);
+
+  document.getElementById("result").innerHTML = nameAndResutlt;
 }
