@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Liste des utilisateurs</title>
 </head>
+
 <body onload="fetchUsers()">
-    <div class="mb-3">
-        <input type="text" class="form-control" id="search" placeholder="Rechercher"
-        onkeyup="seach">
+    <div class="container my-4 d-flex flex-row-reverse justify-content-between">
+        <h2 class="d-flex justify-content-between ">
+            <span class="btn-gloup" role="group">
+                <button class="btn btn-outline-primary p-2" type="button" onclick="displayTable()">Tableau</button>
+                <button class="btn btn-outline-primary p-2" type="button" onclick="displayTable()">Grille</button>
+            </span>
+        </h2>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <th>Nom</th>
+                <th>Telephone</th>
+                <th>Email</th>
+            </thead>
+            <tbody id="users-body">
+
+            </tbody>
+        </table>
     </div>
 
-    <script type="text/javascript" src="styles/users.js"></script>
-    
+    <script src="scripts/users.js"></script>
+
 </body>
+
 </html>

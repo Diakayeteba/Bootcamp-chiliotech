@@ -1,13 +1,27 @@
-function fetchUsers(){
-     fetch ("https://jsonplaceholder.typicode.com/users")
-     .then(function(response){
-        return response.json();
+function handleResponse(response) {
+  return response.json();
+}
 
-    })
-     .then(function(data){
-       // JSON -> javascript object notation
-        console.log(data);
-       return data;
+const handleData = (data) => {
+    console.log(data);
+    let tableLines = "";
+  for (let index = 0; index < data.length; index++) {
+    const user = data[index];
+    const tableLine = `
+        <tr>
+            <td>${user.name}</td>
+            <td>${user.phone}</td>
+            <td>${user.email}</td>
+        </tr>
+    `;
+    tableLines = tableLines + tableLine;
+    
+  }
+  document.getElementById("users-body").innerHTML = tableLines;
+};
 
-    });
+function fetchUsers() {
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response) => handleResponse(response))
+    .then((data) => handleData(data));
 }
